@@ -11,7 +11,6 @@ public class Finance {
     public static void main(String [] args){
         try {
             Stock stock = YahooFinance.get("MSFT");
-            BigDecimal price = stock.getQuote().getPrice();
         } catch (IOException e) {
             e.printStackTrace();
         }
